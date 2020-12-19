@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+<Configuration status="debug">
+    <!--appenders:定义输出内容,输出格式,输出方式,日志保存策略等,常用其下三种标签[console,File,RollingFile] -->
+    <!--Appender可以理解为日志的输出目的地 -->
+    <!--console :控制台输出的配置 -->
+
+    <Appenders>
+        <!--console :控制台输出的配置 -->
+        <!--
+   %d 输出日志时间点的日期或时间
+   %t 输出产生该日志事件的线程名
+   %p 输出优先级，即DEBUG,INFO,WARN,ERROR,FATAL
+   %F 输出日志消息产生时所在的文件名称
+   %c 输出所属的类目,通常就是所在类的全名
+   %L 输出代码中的行号
+    -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n"/>
+        </Console>
+
+        <RollingFile name="RollingFile" filename="log/ZycTest.log"
+                     filepattern="/%d{YYYYMMddHHmmss}-fargo.log">
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+    <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效 -->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

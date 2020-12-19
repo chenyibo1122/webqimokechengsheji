@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body{
+    background-image: url("../images/money.jpg");
+    font-size: 14px;
+}
+#background{
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(255,255,255,0.1);
+}
+#pageBody{
+    width:66%;
+    height:80%;
+    margin: auto;
+}
+
+
+#serach-clear{
+    width: 30%;
+    display:inline-block;
+    float:right;
+}
+
+
+
+table{
+    width:90%
+}
+
+
+
+
+#Pagechoice{
+    width: 60%;
+    display:inline-block;
+    float:left;
+}
+#Pagechoice2{
+    width:30%;
+    display:inline-block;
+    float:right;
+}
+
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#detail-image{
+    width: 500px;
+    height: 360px;
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+img[src=""],img:not([src]){
+    opacity:0;
+}
+
+
+.tr_hover{
+    background-color: aqua;
+}
+
+.tr_odd{
+    background-color: deepskyblue;
+}
+.tr.even{
+    background-color: greenyellow;
+}

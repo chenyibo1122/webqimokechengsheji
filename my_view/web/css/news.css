@@ -1,0 +1,222 @@
+body{
+    font-family: "Microsoft YaHei" !important;
+}
+
+li{
+    list-style: none;
+}
+
+
+.main{
+    width: 1300px;
+    height: 1200px;
+    background: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 180px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(73,80,96,0.10);
+}
+.bigcard-content{
+    font-size:medium;
+}
+.left-content{
+    width: 70%;
+    float: left;
+}
+
+
+.left-content .bigger-card{
+    width: 100%;
+    height: 390px;
+    float: left;
+    padding: 30px 45px 20px 35px;
+    box-sizing: border-box;
+}
+.bigcard-content li{
+    width: 390px;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: -10px;
+}
+.card-nav{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #dddee1;
+    position: relative;
+}
+.card-nav .more{
+    position: absolute;
+    right: 0;
+    color: #2d8cf0;
+    font-size: 14px;
+}
+.card-nav ul li{
+    float: left;
+    min-width: 76px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 38px;
+    color: #80848f;
+    cursor: pointer;
+    position: relative;
+}
+.card-nav ul li {
+    color: #80848f;
+    font-size: 18px;
+}
+.card-nav ul li.active {
+    font-size: 18px;
+    color: #1c2438;
+}
+.card-nav ul li.active{
+    color: #1c2438;
+}
+.card-nav ul li.active:after{
+    content: '';
+    background: #2d8cf0;
+    height: 4px;
+    width: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 29%;
+    border-radius: 100px;
+}
+.bigcard-content,.card-content{
+    margin-top: 15px;
+}
+.bigcard-content li:hover{
+    background: rgba(45,140,240,0.06);
+    border-radius: 12px;
+}
+.bigcard-content li:hover span{
+    color: #1C2438 !important;
+}
+
+.bigcard-content li:nth-of-type(odd) span:nth-of-type(1){
+    max-width: 75% !important;
+}
+.bigcard-content li:nth-of-type(odd) span:nth-of-type(2){
+    right: 11px;
+}
+.bigcard-content li:nth-of-type(even){
+    padding-left: 10px;
+    right: -10px;
+    margin-left: 32px;
+    width: 376px;
+}
+.bigcard-content li:nth-of-type(even) span:nth-of-type(1){
+    width: 75%;
+}
+
+.bigcard-content li span,.card-content li span{
+    color: #495060;
+}
+.bigcard-content li span:nth-of-type(1),.card-content li span:nth-of-type(1){
+    max-width: 80%;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.bigcard-content li span:nth-of-type(2),.card-content li span:nth-of-type(2){
+    position: absolute;
+    right: 10px;
+    color: #bbbec4;
+}
+ .right-content{
+    width: 30%;
+    float: left;
+}
+
+.zhuanti ul{
+    width: 400px;
+}
+.zhuanti li{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+.zhuanti ul li img{
+    margin-right: 12px;
+    width: 18px;
+}
+.zhuanti ul li span{
+    font-size: 14px;
+    color: #495060;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 95px;
+    position: absolute;
+}
+
+.dataCenter li{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+.dataCenter ul li:nth-of-type(odd){
+    margin-left: -10px;
+}
+.dataCenter ul li:nth-of-type(even){
+    margin-left: 14px;
+}
+.dataCenter ul li span{
+    font-size: 14px;
+    color: #495060;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    margin: 13px 0 15px 0;
+    background: #dddee1;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #dddee1 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#dddee1 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#dddee1 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#dddee1 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#dddee1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddee1',GradientType=0 );
+}
+
+.zhuanti{
+    width: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.dataCenter{
+    width: 350px;
+    margin: 20px auto;
+}
+
+
+.zhuanti ul li:hover{
+    background: rgba(45,140,240,0.06);
+    border-radius: 12px;
+}
+.dataCenter ul li:hover{
+    background: rgba(45,140,240,0.06);
+    border-radius: 12px;
+}
+.dataCenter ul{
+    width: 400px;
+}
